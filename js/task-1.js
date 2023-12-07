@@ -1,7 +1,8 @@
 /** @format */
 
 function makeTransaction(quantity, pricePerDroid) {
-	let message = `You ordered ${quantity} droids worth ${pricePerDroid} credits`;
+	let totalPrice = quantity * pricePerDroid;
+	let message = `You ordered ${quantity} droids worth ${totalPrice} credits`;
 	return message;
 }
 
